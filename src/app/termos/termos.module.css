@@ -1,0 +1,121 @@
+.pageWrapper {
+  min-height: 100vh;
+  background-color: #F8FAFC;
+  padding-bottom: 80px;
+}
+
+.header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 16px 0;
+  margin-bottom: 40px;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoImg {
+  height: 42px;
+  width: auto;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748B;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: #0070F3;
+}
+
+.contentContainer {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.pageHeader {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.categoryBadge {
+  color: #0070F3;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #64748B;
+  line-height: 1.6;
+}
+
+/* Artigo Principal */
+.article {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 24px;
+  padding: 48px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 12px;
+}
+
+.section p {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.section ul {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .article {
+    padding: 28px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+}

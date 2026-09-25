@@ -1,0 +1,145 @@
+.footer {
+  background-color: #040914;
+  color: #94A3B8;
+  padding: 80px 0 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.9rem;
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
+  gap: 48px;
+  margin-bottom: 60px;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logoLink {
+  display: inline-flex;
+}
+
+.logoImg {
+  height: 50px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.brandDesc {
+  line-height: 1.6;
+  color: #94A3B8;
+  font-size: 0.92rem;
+}
+
+.securityBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.badgeItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(0, 245, 155, 0.08);
+  border: 1px solid rgba(0, 245, 155, 0.25);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  color: #00F59B;
+  font-weight: 700;
+}
+
+.colTitle {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linkList a,
+.linkList span {
+  color: #94A3B8;
+  transition: color 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.linkList a:hover {
+  color: #0070F3;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #E2E8F0;
+  font-size: 0.88rem;
+}
+
+.bottomBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 30px;
+  font-size: 0.85rem;
+}
+
+.copyright strong {
+  color: #FFFFFF;
+}
+
+.credits {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #94A3B8;
+}
+
+.agaveLink {
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.agaveLink:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.agaveLogo {
+  height: 20px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 968px) {
+  .topRow {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}

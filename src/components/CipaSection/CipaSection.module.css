@@ -1,0 +1,327 @@
+.section {
+  position: relative;
+  padding: 110px 0;
+  background-color: #070F1E; /* Fundo Escuro Restaurado */
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+/* Luzes Neon de Fundo */
+.glowLeft {
+  position: absolute;
+  top: 15%;
+  left: -150px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 59, 48, 0.15) 0%, rgba(7, 15, 30, 0) 70%);
+  pointer-events: none;
+}
+
+.glowRight {
+  position: absolute;
+  bottom: 15%;
+  right: -150px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 245, 155, 0.15) 0%, rgba(7, 15, 30, 0) 70%);
+  pointer-events: none;
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 112, 243, 0.15);
+  color: #38BDF8;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border: 1px solid rgba(0, 112, 243, 0.35);
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #94A3B8;
+  line-height: 1.6;
+}
+
+.highlightText {
+  color: #FF453A;
+  font-weight: 800;
+}
+
+/* Layout Principal de 2 Colunas */
+.mainContainer {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* Lado Esquerdo: Fotografia com Badges */
+.visualWrapper {
+  position: relative;
+}
+
+.imageCard {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  height: 460px;
+}
+
+.cipaImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 15, 30, 0.1) 0%, rgba(7, 15, 30, 0.7) 100%);
+}
+
+.floatingCardTop {
+  position: absolute;
+  top: 20px;
+  left: -16px;
+  z-index: 10;
+}
+
+.floatingCardBottom {
+  position: absolute;
+  bottom: 20px;
+  right: -16px;
+  z-index: 10;
+}
+
+.cardGlassDanger {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(13, 25, 48, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 59, 48, 0.4);
+  padding: 12px 18px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.glassTitleDanger {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.glassDescDanger {
+  font-size: 0.75rem;
+  color: #FFC2BE;
+}
+
+.cardGlassSuccess {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(13, 25, 48, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 245, 155, 0.4);
+  padding: 12px 18px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.glassTitleSuccess {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.glassDescSuccess {
+  font-size: 0.75rem;
+  color: #A7F3D0;
+}
+
+/* Lado Direito: Grid Comparativo */
+.gridComparison {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(13, 25, 48, 0.8);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 18px;
+  transition: all 0.25s ease;
+}
+
+.cardDanger {
+  border: 1px solid rgba(255, 59, 48, 0.3);
+}
+
+.cardDanger:hover {
+  border-color: #FF3B30;
+  box-shadow: 0 10px 25px rgba(255, 59, 48, 0.2);
+}
+
+.cardSuccess {
+  border: 1px solid rgba(0, 245, 155, 0.35);
+  background: linear-gradient(135deg, rgba(0, 245, 155, 0.05) 0%, rgba(13, 25, 48, 0.85) 100%);
+}
+
+.cardSuccess:hover {
+  border-color: #00F59B;
+  box-shadow: 0 10px 25px rgba(0, 245, 155, 0.2);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.iconBoxDanger {
+  background: rgba(255, 59, 48, 0.15);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 59, 48, 0.3);
+}
+
+.iconBoxSuccess {
+  background: rgba(0, 245, 155, 0.15);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 245, 155, 0.3);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.cardList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #E2E8F0;
+  line-height: 1.5;
+}
+
+.bulletRed {
+  color: #FF3B30;
+  font-weight: 900;
+}
+
+.bulletGreen {
+  color: #00F59B;
+  font-weight: 900;
+}
+
+/* Faixa CTA */
+.ctaBox {
+  background: linear-gradient(135deg, rgba(0, 112, 243, 0.25) 0%, rgba(13, 25, 48, 0.95) 100%);
+  border: 1px solid rgba(0, 112, 243, 0.5);
+  border-radius: 18px;
+  padding: 28px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.ctaText {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.ctaIconBox {
+  background: rgba(0, 112, 243, 0.2);
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 112, 243, 0.4);
+}
+
+.ctaTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.ctaDesc {
+  font-size: 0.9rem;
+  color: #94A3B8;
+}
+
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #0070F3 0%, #0051B3 100%);
+  color: #FFFFFF;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 25px -5px rgba(0, 112, 243, 0.6);
+}
+
+.ctaBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px -5px rgba(0, 112, 243, 0.8);
+}
+
+@media (max-width: 968px) {
+  .mainContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaBox {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ctaText {
+    flex-direction: column;
+    text-align: center;
+  }
+}

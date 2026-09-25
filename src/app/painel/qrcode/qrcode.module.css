@@ -1,0 +1,50 @@
+.layoutWrapper { display: flex; min-height: 100vh; background-color: #F8FAFC; }
+.sidebar { width: 260px; background-color: #070F1E; color: #94A3B8; display: flex; flex-direction: column; padding: 24px; border-right: 1px solid rgba(255, 255, 255, 0.08); flex-shrink: 0; }
+.logoImg { height: 40px; width: auto; }
+.companyBadge { display: flex; align-items: center; gap: 12px; background-color: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); padding: 12px; border-radius: 14px; margin: 24px 0 32px; }
+.companyInfo { display: flex; flex-direction: column; }
+.companyName { color: #FFFFFF; font-size: 0.88rem; font-weight: 700; }
+.companyCnpj { font-size: 0.72rem; color: #64748B; }
+
+.navMenu { display: flex; flex-direction: column; gap: 8px; flex-grow: 1; }
+.navItem { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 12px; font-size: 0.9rem; font-weight: 600; color: #94A3B8; }
+.navItem:hover { background-color: rgba(255, 255, 255, 0.08); color: #FFFFFF; }
+.navItemActive { background-color: #0070F3 !important; color: #FFFFFF !important; }
+
+.sidebarFooter { border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 16px; }
+.logoutBtn { display: flex; align-items: center; gap: 12px; color: #EF4444; font-size: 0.9rem; font-weight: 700; padding: 12px 16px; }
+
+.mainContent { flex-grow: 1; padding: 36px 48px; }
+.topHeader { margin-bottom: 32px; }
+.pageTitle { font-size: 1.8rem; font-weight: 800; color: #0F172A; margin-bottom: 4px; }
+.pageSubtitle { font-size: 0.95rem; color: #64748B; }
+
+.gridContainer { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.card { background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 24px; padding: 32px; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03); }
+.cardTitle { font-size: 1.25rem; font-weight: 800; color: #0F172A; margin-bottom: 6px; }
+.cardDesc { font-size: 0.9rem; color: #64748B; margin-bottom: 24px; line-height: 1.5; }
+
+.urlBox { display: flex; align-items: center; justify-content: space-between; background-color: #F8FAFC; border: 1px solid #E2E8F0; padding: 12px 16px; border-radius: 14px; margin-bottom: 28px; }
+.urlText { font-family: monospace; font-size: 0.88rem; font-weight: 700; color: #0070F3; overflow: hidden; text-overflow: ellipsis; }
+.copyBtn { display: flex; align-items: center; gap: 6px; background-color: #0F172A; color: #FFF; border: none; padding: 8px 14px; border-radius: 10px; font-size: 0.82rem; font-weight: 700; cursor: pointer; }
+
+.qrCodeVisualBox { text-align: center; display: flex; flex-direction: column; align-items: center; }
+.qrCodeFrame { background-color: #F8FAFC; border: 1px solid #E2E8F0; padding: 24px; border-radius: 20px; margin-bottom: 14px; }
+.qrSubtext { font-size: 0.85rem; color: #64748B; max-width: 280px; }
+
+/* Cartaz */
+.posterPreview { background-color: #FFFFFF; border: 2px solid #0F172A; border-radius: 18px; padding: 24px; text-align: center; margin-bottom: 24px; }
+.posterHeader { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #E2E8F0; padding-bottom: 12px; margin-bottom: 16px; }
+.posterLogo { height: 28px; width: auto; }
+.posterBadge { font-size: 0.72rem; font-weight: 800; color: #0070F3; }
+
+.posterTitle { font-size: 1.2rem; font-weight: 900; color: #0F172A; margin-bottom: 4px; }
+.posterDesc { font-size: 0.82rem; color: #64748B; margin-bottom: 20px; }
+
+.posterQrCenter { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-bottom: 20px; }
+.posterQrCenter span { font-size: 0.78rem; font-weight: 700; color: #0F172A; }
+
+.posterFooter { border-top: 1px solid #E2E8F0; padding-top: 12px; font-size: 0.75rem; color: #64748B; font-weight: 600; }
+
+.posterActions { display: flex; gap: 12px; }
+.btnPrimary { display: flex; align-items: center; justify-content: center; gap: 10px; background-color: #0070F3; color: #FFF; border: none; padding: 14px; border-radius: 12px; font-weight: 800; font-size: 0.95rem; width: 100%; cursor: pointer; }

@@ -1,0 +1,342 @@
+.section {
+  position: relative;
+  padding: 120px 0;
+  background-color: #070F1E; /* Azul Escuro Petróleo para destacar o Painel */
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+.glowBg {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(0, 112, 243, 0.15) 0%, rgba(7, 15, 30, 0) 70%);
+  pointer-events: none;
+}
+
+/* PARTE 1: Layout Topo (Dashboard) */
+.topBlock {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.tagGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 112, 243, 0.15);
+  color: #38BDF8;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border: 1px solid rgba(0, 112, 243, 0.3);
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.18;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  letter-spacing: -0.025em;
+}
+
+.desc {
+  font-size: 1.1rem;
+  color: #94A3B8;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #0070F3 0%, #0051B3 100%);
+  color: #FFFFFF;
+  padding: 16px 32px;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 0.98rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 25px rgba(0, 112, 243, 0.5);
+}
+
+.btnPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 112, 243, 0.7);
+}
+
+/* Mockup do Dashboard */
+.dashboardMockup {
+  background: rgba(13, 25, 48, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.mockupHeader {
+  background-color: rgba(7, 15, 30, 0.9);
+  padding: 14px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mockupTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dotRed, .dotYellow, .dotGreen {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dotRed { background-color: #FF3B30; }
+.dotYellow { background-color: #FF9500; }
+.dotGreen { background-color: #00F59B; }
+
+.mockupName {
+  font-size: 0.82rem;
+  color: #94A3B8;
+  font-weight: 600;
+}
+
+.liveBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 245, 155, 0.12);
+  color: #00F59B;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  border: 1px solid rgba(0, 245, 155, 0.3);
+}
+
+.liveDot {
+  width: 6px;
+  height: 6px;
+  background-color: #00F59B;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00F59B;
+}
+
+.mockupBody {
+  padding: 28px;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.metricCard {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 14px 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.metricVal {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+.metricLabel {
+  font-size: 0.72rem;
+  color: #64748B;
+  margin-top: 4px;
+}
+
+.metricCardSuccess {
+  background: rgba(0, 245, 155, 0.1);
+  border: 1px solid rgba(0, 245, 155, 0.3);
+  padding: 14px 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.metricValSuccess {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #00F59B;
+  line-height: 1;
+}
+
+.metricLabelSuccess {
+  font-size: 0.72rem;
+  color: #A7F3D0;
+  margin-top: 4px;
+}
+
+/* Categorias e Progress Bars */
+.categoriesBox {
+  background-color: rgba(7, 15, 30, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.boxTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #E2E8F0;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.barItem {
+  margin-bottom: 14px;
+}
+
+.barItem:last-child {
+  margin-bottom: 0;
+}
+
+.barInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: #CBD5E1;
+  margin-bottom: 6px;
+}
+
+.barTrack {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s ease;
+}
+
+/* PARTE 2: Layout Inferior (NR-1 e Sinais) */
+.bottomBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 80px;
+}
+
+.tagGroupOrange {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 149, 0, 0.15);
+  color: #FF9500;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border: 1px solid rgba(255, 149, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.bottomTitle {
+  font-size: 2.3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.bottomDesc {
+  font-size: 1.05rem;
+  color: #94A3B8;
+  line-height: 1.6;
+}
+
+.signalsCard {
+  background: rgba(13, 25, 48, 0.8);
+  border: 1px solid rgba(0, 112, 243, 0.3);
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.signalsHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.signalsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.signalPill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  color: #E2E8F0;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.signalPill:hover {
+  border-color: #00F59B;
+  background-color: rgba(0, 245, 155, 0.08);
+}
+
+@media (max-width: 968px) {
+  .topBlock, .bottomBlock {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .signalsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title, .bottomTitle {
+    font-size: 2rem;
+  }
+}

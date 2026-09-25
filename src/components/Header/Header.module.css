@@ -1,0 +1,129 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 48px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navLink {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--accent);
+}
+
+.navLinkHighlight {
+  color: var(--accent);
+  font-size: 0.92rem;
+  font-weight: 700;
+  transition: opacity 0.2s ease;
+}
+
+.navLinkHighlight:hover {
+  opacity: 0.8;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Botão do Colaborador para Relato Anônimo */
+.btnDenuncia {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #059669; /* Verde Segurança / Proteção */
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 10px rgba(5, 150, 105, 0.25);
+}
+
+.btnDenuncia:hover {
+  background-color: #047857;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.4);
+}
+
+.authPill {
+  display: flex;
+  align-items: center;
+  background-color: #F1F5F9;
+  border: 1px solid #E2E8F0;
+  padding: 4px;
+  border-radius: 30px;
+  gap: 4px;
+}
+
+.btnLogin {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.btnLogin:hover {
+  color: var(--text-primary);
+}
+
+.btnRegister {
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.15);
+}
+
+.btnRegister:hover {
+  background-color: var(--accent);
+  box-shadow: 0 4px 14px rgba(0, 112, 243, 0.3);
+}
+
+@media (max-width: 968px) {
+  .nav {
+    display: none;
+  }
+}

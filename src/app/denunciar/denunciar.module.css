@@ -1,0 +1,388 @@
+.pageWrapper {
+  min-height: 100vh;
+  background-color: #F8FAFC;
+  padding-bottom: 80px;
+}
+
+.header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 16px 0;
+  margin-bottom: 40px;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoImg {
+  height: 42px;
+  width: auto;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748B;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: #0070F3;
+}
+
+.contentContainer {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Card Principal do Formulário */
+.formCard {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.05);
+}
+
+.securityBanner {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: rgba(5, 150, 105, 0.08);
+  border: 1px solid rgba(5, 150, 105, 0.25);
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.securityIconBox {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.securityTitle {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #065F46;
+  margin-bottom: 2px;
+}
+
+.securityDesc {
+  font-size: 0.85rem;
+  color: #047857;
+  line-height: 1.5;
+}
+
+.formHeader {
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 0.98rem;
+  color: #64748B;
+  line-height: 1.5;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.required {
+  color: #EF4444;
+}
+
+.input, .select, .textarea {
+  background-color: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: #0F172A;
+  outline: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  border-color: #0070F3;
+  box-shadow: 0 0 12px rgba(0, 112, 243, 0.15);
+}
+
+.textarea {
+  resize: vertical;
+}
+
+/* Upload de Evidências */
+.fileUploadBox {
+  position: relative;
+  border: 2px dashed #CBD5E1;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background-color: #F8FAFC;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.fileUploadBox:hover {
+  border-color: #0070F3;
+  background-color: rgba(0, 112, 243, 0.03);
+}
+
+.uploadText {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.uploadSubtext {
+  font-size: 0.78rem;
+  color: #94A3B8;
+}
+
+.fileInput {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Caixa de Anonimato */
+.anonymityOptionBox {
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.anonymityHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #0070F3;
+  cursor: pointer;
+}
+
+.checkboxLabel {
+  font-size: 0.95rem;
+  color: #0F172A;
+  cursor: pointer;
+}
+
+.identityInputs {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #E2E8F0;
+}
+
+.inputRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #0070F3 0%, #0051B3 100%);
+  color: #FFFFFF;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 800;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 25px rgba(0, 112, 243, 0.3);
+  margin-top: 10px;
+}
+
+.submitBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 112, 243, 0.5);
+}
+
+/* Card de Sucesso / Protocolo */
+.successCard {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 24px;
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.successIconBox {
+  margin-bottom: 20px;
+}
+
+.successTitle {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 10px;
+}
+
+.successDesc {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.protocolBox {
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  padding: 28px;
+  border-radius: 20px;
+  margin-bottom: 36px;
+}
+
+.protocolLabel {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #0070F3;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.protocolRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.protocolCode {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #0F172A;
+  letter-spacing: 0.05em;
+  font-family: monospace;
+}
+
+.copyBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.copyBtn:hover {
+  background-color: #0070F3;
+}
+
+.protocolNotice {
+  font-size: 0.88rem;
+  color: #64748B;
+  line-height: 1.5;
+}
+
+.successActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btnHome {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.btnHome:hover {
+  background-color: #0070F3;
+}
+
+.btnNewReport {
+  background-color: transparent;
+  color: #64748B;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: 1px solid #CBD5E1;
+  transition: all 0.2s ease;
+}
+
+.btnNewReport:hover {
+  color: #0F172A;
+  border-color: #0F172A;
+}
+
+@media (max-width: 768px) {
+  .formCard, .successCard {
+    padding: 24px;
+  }
+
+  .inputRow {
+    grid-template-columns: 1fr;
+  }
+
+  .protocolCode {
+    font-size: 1.6rem;
+  }
+
+  .protocolRow {
+    flex-direction: column;
+  }
+
+  .successActions {
+    flex-direction: column;
+  }
+}
