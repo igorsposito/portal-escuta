@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛡️ Portal Escuta — Plataforma B2B de Canal de Denúncias e Compliance (CIPA+A & LGPD)
 
-## Getting Started
+> Sistema SaaS de alta segurança voltado para o cumprimento das exigências legais da **Lei nº 14.457/22 (CIPA+A)** e **NR-1**, oferecendo anonimato absoluto aos colaboradores e gestão unificada para comitês de compliance e RH.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Visão Geral do Produto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O **Portal Escuta** foi projetado para resolver a necessidade corporativa de canais de relatos seguros, confidenciais e auditáveis. Através de URLs exclusivas e QR Codes dinâmicos por empresa, colaboradores podem reportar ocorrências de assédio, riscos ocupacionais (SST) e inconsistências éticas com total proteção de identidade.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🔑 Diferenciais & Recursos Principais
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **🔒 Anonimato por Design (Zero-IP Log):** O sistema descarte e sobrescreve qualquer identificador de IP no envio de relatos.
+- **🖼️ Higienização de Mídia:** Remoção automática de metadados EXIF (dados de câmera, GPS e modelo do dispositivo) em arquivos e fotos anexados.
+- **💬 Chat Anônimo Bidirecional:** Canal de mensagens criptografado entre a equipe de investigação e o colaborador através do código de protocolo exclusivo.
+- **🏢 Multi-tenancy Nativo:** Isolamento total de dados por empresa via Row Level Security (RLS).
+- **🖨️ Gerador de Cartazes CIPA+A:** Criação e exportação de artes e QR Codes prontos em A4 para fixação nos setores e murais fabris.
+- **📊 Painel de Compliance:** Métrica de KPIs, prazos legais de apuração, filtros por setor e exportação de relatórios para auditoria.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Front-end:** [Next.js](https://nextjs.org/) (App Router, React 19)
+- **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
+- **Estilização:** CSS Modules (Design responsivo e acessível)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Hospedagem & CDN:** [Vercel Pro](https://vercel.com/)
+- **Banco de Dados & Autenticação:** [Supabase](https://supabase.com/) / PostgreSQL *(em integração)*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Como Rodar o Projeto Localmente
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) versão 18.x ou superior
+- Gerenciador de pacotes `npm` ou `yarn`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Passo a Passo
+
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/SEU_USUARIO/portal-escuta.git](https://github.com/SEU_USUARIO/portal-escuta.git)
+   cd portal-escuta
